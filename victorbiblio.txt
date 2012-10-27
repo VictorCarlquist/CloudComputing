@@ -1,1 +1,5 @@
 http://www.tudosobrecloud.com.br/a-essencia-do-cloud-computing-iaas/
+
+http://computerworld.uol.com.br/tecnologia/2012/01/09/paas-possibilita-pronta-entrega-de-aplicativos/
+
+http://www.ibm.com/developerworks/br/cloud/library/cl-cloudservices2paas/
