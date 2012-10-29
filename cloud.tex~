@@ -1,0 +1,136 @@
+\documentclass{abnt}
+
+\input{Base}
+
+%%%%% Dados para criação da capa e folha de rosto %%%%
+\autor{	Denis F. de Carvalho,
+		Guilherme A. de Macedo,
+		Matheus L. Domingues da Silva e 
+		Victor H. Carlquist da Silva
+}
+\titulo{Could Computing}
+\orientador{Avelino Natal Bazanella Junior}
+\comentario{Trabalho apresentado ao Prof. Avelino Bazanela Junior, na disciplina de Redes de Computadores
+			presente no $2^{o}$ modulo do curso de Tecnologia em Análise e Desenvolvimento de Sistemas no IFSP-CJO.}
+\instituicao{Instituto Federal de Educação, Ciência e Tecnologia de São Paulo -- \textit{campus} Campos do Jordão}
+\local{Campos do Jordão}
+\data{\today}
+
+\begin{document}
+
+	% Para utilizar o formato padrão de capa da ABNT, substituí o comando \maketitle pelo comando \capa.
+	\capa
+	
+	\folhaderosto
+	
+	\begin{resumo}
+		Este trabalho tem por objetivo mostrar e explicar o funcionamento da tecnologia de computação em nuvem (cloud computing). 
+		A construção desse trabalho foi baseada em pesquisas em \textit{sites}, gráficos e tabelas, bem como a consulta de livros especializados.
+	\end{resumo}
+
+	\begin{abstract}
+		This work aims to show and explain the workings of the technology Cloud Computing. The construction of this work was based on research on sites, graphs and tables and consultation of specialized books.
+	\end{abstract}
+	
+	\sumario
+	
+	\listadetabelas
+	
+	\listadefiguras
+	
+	\newpage
+	
+	\chapter{Introdução}
+		teste
+	\chapter{O que é \textit{Cloud Computing} ?}
+Cloud Computing é um termo bastante utilizado hoje em dia. Significa, basicamente, alocar recursos remotamente. Imagine que sua empresa necessitasse de um servidor de arquivos e em tudo que isso acarretaria: você teria que contratar pessoal especializado, ter um local na sua empresa para as máquinas, criar rotinas de backups, etc. Enfim, você teria uma enorme dor de cabeça para conseguir configurar todo o servidor. Utilizando o conceito de Cloud Computing você poderia simplesmente contratar um serviço na internet onde você pagaria apenas pelo tanto que fizesse uso, não teria que se preocupar em contratar pessoal especializado para a manutenção dos servidores, ou em ter um local na sua empresa para as máquinas, nem criar rotinas de backups, ou seja, o servidor estaria operacional em pouco tempo (apenas alguns cliques), apenas seria necessário contratar o serviço e a empresa prestadora do serviço ficaria respondável por toda a parte de configuração e manutenção do servidor.
+
+Podemos resumir os benefícios de se utilizar cloud computing em cinco conceitos:
+    \begin{itemize}
+        \item Espaço: todo o hardware ficará alocado na nuvem;
+        \item Economia: vc não precisará gastar com manutenção de hardware ou de software;
+        \item Tempo: vc só precisará de alguns cliques e tudo estará funcionando;
+        \item Backup: a tarefa de backup e replicação dos dados fica por conta da empresa contratada;
+        \item Configuração: Sem se preocupar com a disposição física dos servidores, o usuário do serviço apenas acessaria as configurações básicas a respeito do mesmo.
+    \end{itemize}
+
+	\chapter{Por que surgiu?}
+O conceito de cloud computing surgiu da necessidade de se terceirizar certos serviços de informação dentro da empresa e da necessidade de os dados estarem sempre disponíveis independente de onde esses dados estejam sendo acessados. Para uma empresa que não trabalhe com informática, ficaria muito caro e complexo criar e configurar servidores, ela teria que criar um departamento inteiro para cuidar da parte de informática (banco de dados, servidor de arquivos, páginas web, etc). Já com o Cloud Computing, seria necessário apenas contratar o serviço. Dentro da empresa ficariam apenas máquinas simples, com poucos recursos, acessando os serviços na nuvem, independente de onde se esteja. Ou seja, se sua empresa tem filiais, seria necessário apenas contratar um serviço e todas as filiais compartilhariam o mesmo serviço. 
+
+Cloud Computing pode funcionar com IaaS, PaaS ou SaaS, recursos, serviços ou softawares, respectivamente, conforme explicado a seguir.
+	\chapter{Modelos de Computação nas Nuvens}
+
+	Com a utilização da computação em nuvem é possível oferecer o 
+	hardware e o software como serviços. 
+	Entre os diversos recursos disponiveis com a utilização dessa tecnologia, 
+	destacam-se os metodos de SaaS, PaaS e IaaS.
+
+	\chapter{SaaS}
+	
+	O Software como serviço (\textit{Software as a Service} (SaaS)) é uma forma 
+	de comercialização do software pela internet. Nesse modelo, o fornecedor 
+	fica responsável pela instalação, configuração e disponibilização do 
+	software, e o usuário apenas paga pelo uso.
+	Geralmente o acesso do usuário ao sistema é feito pela interface 
+	de um navegador \textit{web}.
+
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=10cm, keepaspectratio]{img/SaaS.png}
+		\caption{Modelo SaaS.}
+		\label{saas}
+	\end{figure}
+	
+	Este modelo possibilita maior flexibilidade ao usuário, pois este não 
+	precisa se preocupar como é feita a configuração do sistema em uso. Cabe 
+	ao usuário apenas utilizar o serviço disponível.
+	
+	\section{PaaS}
+		A Plataforma como Serviço (\textit{Platform as a Service} (PaaS)) possibilita a escolha rápida de recursos para desenvolvimento de aplicações.
+		
+		Esta plataforma é considerada a mais confusa das camadas do \textit{cloud}, geralmente sendo confundida com o SaaS ou IaaS (\textit{Infrastructure as a Service}).
+		
+		Uma plataforma na computação, se referindo ao \textit{software}, pode ser definida como os Sistemas Operacionais, por exemplo, Windows\texttrademark , Linux e Mac OS, e pode ser definida como os \textit{frameworks} para os aplicativos. Os SGBDs (Sistema de Gerenciamento de Banco de Dados) também estãos nesta camada.
+	
+		\begin{figure}[h]
+			\centering
+			\includegraphics[width=8cm, keepaspectratio]{img/figure1.jpg}
+			\label{fig_paas}
+			\caption{Estrutura do PaaS}
+		\end{figure}
+		
+		O que um bom provedor PaaS precisa ter:
+			\begin{itemize}
+		    \item Estrutura de desenvolvimento de aplicativo: Uma estrutura de desenvolvimento de aplicativo robusta desenvolvida em tecnologia amplamente usada, por exemplo, o Java;
+            \item Disponibilidade: A plataforma de opção deve estar acessível e disponível em qualquer lugar, a qualquer hora;
+            \item Escalabilidade: A plataforma deve ser inteligente o suficiente para aproveitar a capacidade elástica de uma infraestrutura;
+            \item Segurança: Deve possuir dispositivos contra ataques;
+            \item Inclusão: A plataforma deve fornecer a capacidade de incluir, embarcar e integrar outros aplicativos desenvolvidos nas mesmas plataformas ou em outras;
+            \item Portabilidade: A plataforma deve permitir que as empresas movam o aplicativo de uma IaaS para outra.
+		\end{itemize}
+		
+	\section{IaaS}
+		Infraestrutura como Serviço (\textit{Infrastructure as a Service} (IaaS)) é a camada do \textit{Cloud Computer} de mais baixo nível. Ela pode ser defida como sendo a 'capacidade compucional' da nuvem. Ela é responsável pela infraestrura, ou seja, é nesta camada que se define a quantidade de processamento, de armazenamento, de memória RAM, etc. Toda esta estrutura pode ser encontrada em nossas casas, mas em escala muito menor. O IaaS trabalha nesse nicho, mas em escala industrial.
+		
+		O IaaS não é constituído por PCs(\textit{Personal Computer}), mas por diversos servidores robustos, e os dados ficam em \textit{storages}, que são máquinas que possuem grande contingência, poder de armazenamento e velocidade.
+		
+		Hoje em dia existem diversos serviços, que com apenas um clique pode se criar um servidor com a configuração que se deseja.
+		
+		O IaaS fornece seus serviços as outras duas camadas superiores, o PaaS e o SaaS.
+		 
+	\chapter{Possibilidades - Soluções disponíveis no mercado}
+		Soluções de PaaS:
+		\begin{itemize}
+			\item Heroku: A plataforma Heroku permite hospedar aplicações \textit{web} escritas em diversas linguagens, como o Ruby, PHP, Java e outros. O serviço básico de hospedagem é gratuíto, mas com o uso de serviços do heroku, por exemplo, banco de dados, é cobrado uma taxa mensal.
+			\item OpenShift - Red Hat: Esta plataforma permite hospedar aplicações em Java, PHP, Ruby e Python. Ela oferece dois tipos de serviços, um gratuíto e um pago. O serviço gratuíto é limitado, mas é possível hospedar diversos aplicativos, desde que não precise de banco de dados. Já o serviço pago possuí um poder de processamento melhor e suporte à banco de dados.
+		\end{itemize}
+		Soluções de IaaS:
+		\begin{itemize}
+			\item Amazon Web Service (AWS): A AWS permite criar servidores na nuvem de acordo com a necessidade da empresa. É possível escolher a plataforma e o poder de processamento do servidor. Com apenas alguns cliques é possível criar esses servidores. 
+			
+			O AWS usa um sistema de cobrança chamado \textit{pay-as-you-go} (pague pelo uso, em tradução livre), isso significa que você só paga quando o serviço está ativo.
+		\end{itemize}
+		
+	\chapter{Conclusão}
+		teste
+\end{document}
