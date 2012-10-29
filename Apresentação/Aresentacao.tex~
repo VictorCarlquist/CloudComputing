@@ -1,0 +1,87 @@
+\documentclass[xcolor=dvipsnames]{beamer} 
+\usecolortheme[named=Brown]{structure} 
+\usetheme[height=7mm]{Rochester} 
+
+\usepackage[brazilian]{babel}
+\usepackage[T1]{fontenc} 
+\usepackage{graphicx}
+
+\autor{	Denis F. de Carvalho,
+		Guilherme A. de Macedo,
+		Matheus L. Domingues da Silva e 
+		Victor H. Carlquist da Silva
+}
+\titulo{Could Computing}
+		
+\hypersetup{pdfpagemode=FullScreen}
+
+\begin {document}
+
+\frame { \titlepage }
+
+\frame {
+	\frametitle {Introdução}
+	\begin{itemize}
+		\item Objetivo;
+		\item Apresentação dos conceitos básicos;
+		\item Soluções disponíveis no mercado;
+		\item Conclusão.
+	\end{itemize}
+	
+}
+
+\frame {
+	\frametitle {O que é Cloud Computing?}
+	\begin{itemize}
+		\item Espaço;
+		\item Economia;
+		\item Tempo;
+		\item Espaço;
+		\item Backup;
+		\item Configuração.
+	\end{itemize}
+	
+}
+
+\frame {
+	\frametitle {Por que surgiu?}
+	\begin{itemize}
+		\item Disponibilidade de serviço;
+		\item Despreocupação com a tecnologia;
+		\item Despreocupação com a infraestrutura;
+	\end{itemize}
+	
+}
+
+\frame {
+	\frametitle {Desvantagens}
+	\begin{itemize}
+		\item Lentidão por armazenar os arquivos na nuvem;
+		\item Conferir a tercerios informações estratégicas da empresa;
+		\item Despreocupação com a infraestrutura;
+	\end{itemize}
+	
+}
+
+\frame {
+	\frametitle {Modelos de Computação nas Nuvens}
+	\begin{itemize}
+		\item SaaS;
+		\item PaaS;
+		\item IaaS;
+	\end{itemize}
+	
+}
+
+\frame {
+	\frametitle {Possibilidades - Soluções Disponíveis no Mercado}
+	\begin{itemize}
+		\item Gmail (SaaS);
+		\item Heroku (PaaS);
+		\item OpenShift (PaaS);
+		\item IaaS (PaaS);
+		\item Amazon Web Service (IaaS);
+	\end{itemize}
+	
+}
+\end{document}
