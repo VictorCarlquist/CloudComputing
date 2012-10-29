@@ -4,14 +4,13 @@
 
 %%%%% Dados para criação da capa e folha de rosto %%%%
 \autor{	Denis F. de Carvalho,
-		Guilherme A. de Macedo,
-		Matheus L. Domingues da Silva e 
-		Victor H. Carlquist da Silva
+	Guilherme A. de Macedo,
+	Matheus L. Domingues da Silva e 
+	Victor H. Carlquist da Silva
 }
 \titulo{Could Computing}
 \orientador{Avelino Natal Bazanella Junior}
-\comentario{Trabalho apresentado ao Prof. Avelino Bazanela Junior, na disciplina de Redes de Computadores
-			presente no $2^{a}$ modulo do curso de Tecnologia em Análise e Desenvolvimento de Sistemas no IFSP-CJO.}
+\comentario{Trabalho apresentado ao Prof. Avelino Bazanela Junior, na disciplina de Redes de Computadores presente no $2^{a}$ modulo do curso de Tecnologia em Análise e Desenvolvimento de Sistemas no IFSP-CJO.}
 \instituicao{Instituto Federal de Educação, Ciência e Tecnologia de São Paulo -- \textit{campus} Campos do Jordão}
 \local{Campos do Jordão}
 \data{\today}
@@ -27,10 +26,6 @@
 		Este trabalho tem por objetivo mostrar e explicar o funcionamento da tecnologia de computação em nuvem (cloud computing). 
 		A construção desse trabalho foi baseada em pesquisas em \textit{sites}, gráficos e tabelas, bem como a consulta de livros especializados.
 	\end{resumo}
-
-	\begin{abstract}
-		This work aims to show and explain the workings of the Six Sigma program. The construction of this work was based on research on sites, graphs and tables, and consultation of specialized books.
-	\end{abstract}
 	
 	\sumario
 	
@@ -38,41 +33,65 @@
 	
 	\listadefiguras
 	
-	\newpage
+	\chapter{Introdução}
+		teste
+	\chapter{O que é \textit{Cloud Computing} ?}
+		teste
+	\chapter{Por que surgiu?}
+		teste
+	\chapter{Modelos de Computação nas Nuvens}
+
+	Com a utilização da computação em nuvem é possível oferecer o 
+	hardware e o software como serviços. 
+	Entre os diversos recursos disponiveis com a utilização dessa tecnologia, 
+	destacam-se os metodos de SaaS, PaaS e IaaS.
+
+	\section{SaaS}
 	
-	\section{Introdução}
-		teste
-	\section{O que é \textit{Cloud Computing} ?}
-		teste
-	\section{Por que surgiu?}
-		teste
-	\section{Modelos de Computação nas Nuvens}
-		teste
-	\subsection{SaaS}
-		teste
-	\subsection{PaaS}
+	O Software como serviço (\textit{Software as a Service} (SaaS)) é uma forma 
+	de comercialização do software pela internet. Nesse modelo, o fornecedor 
+	fica responsável pela instalação, configuração e disponibilização do 
+	software, e o usuário apenas paga pelo uso.
+	Geralmente o acesso do usuário ao sistema é feito pela interface 
+	de um navegador \textit{web}.
+
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=10cm, keepaspectratio]{img/SaaS.png}
+		\caption{Modelo SaaS.}
+		\label{saas}
+	\end{figure}
+	
+	Este modelo possibilita maior flexibilidade ao usuário, pois este não 
+	precisa se preocupar como é feita a configuração do sistema em uso. Cabe 
+	ao usuário apenas utilizar o serviço disponível.
+
+	\section{PaaS}
 		A Plataforma como Serviço (\textit{Platform as a Service} (PaaS)) possibilita a escolha rápida de recursos para desenvolvimento de aplicações.
 		
 		Esta plataforma é considerada a mais confusa das camadas do \textit{cloud}, geralmente sendo confundida com o SaaS ou IaaS (\textit{Infrastructure as a Service}).
 		
 		Uma plataforma na computação, se referindo ao \textit{software}, pode ser definida como os Sistemas Operacionais, por exemplo, Windows\texttrademark , Linux e Mac OS, e pode ser definida como os \textit{frameworks} para os aplicativos. Os SGBDs (Sistema de Gerenciamento de Banco de Dados) também estãos nesta camada.
-		\newpage
-		\begin{figure}[h]
-			\centering
-			\includegraphics[width=8cm, keepaspectratio]{img/figure1.jpg}
-			\label{fig_paas}
-			\caption{Estrutura do PaaS}
-		\end{figure}
-		O que um bom provedor PaaS precisa ter:
-			\begin{itemize}
-		    \item Estrutura de desenvolvimento de aplicativo: Uma estrutura de desenvolvimento de aplicativo robusta desenvolvida em tecnologia amplamente usada, por exemplo, o Java;
-            \item Disponibilidade: A plataforma de opção deve estar acessível e disponível em qualquer lugar, a qualquer hora;
-            \item Escalabilidade: A plataforma deve ser inteligente o suficiente para aproveitar a capacidade elástica de uma infraestrutura;
-            \item Segurança: Deve possuir dispositivos contra ataques;
-            \item Inclusão: A plataforma deve fornecer a capacidade de incluir, embarcar e integrar outros aplicativos desenvolvidos nas mesmas plataformas ou em outras;
-            \item Portabilidade: A plataforma deve permitir que as empresas movam o aplicativo de uma IaaS para outra.
-		\end{itemize}
-	\subsection{IaaS}
+
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=8cm, keepaspectratio]{img/figure1.jpg}
+		\label{fig_paas}
+		\caption{Estrutura do PaaS}
+	\end{figure}
+
+	O que um bom provedor PaaS precisa ter:
+	
+	\begin{itemize}
+		\item Estrutura de desenvolvimento de aplicativo: Uma estrutura de desenvolvimento de aplicativo robusta desenvolvida em tecnologia amplamente usada, por exemplo, o Java;
+            	\item Disponibilidade: A plataforma de opção deve estar acessível e disponível em qualquer lugar, a qualquer hora;
+            	\item Escalabilidade: A plataforma deve ser inteligente o suficiente para aproveitar a capacidade elástica de uma infraestrutura;
+            	\item Segurança: Deve possuir dispositivos contra ataques;
+            	\item Inclusão: A plataforma deve fornecer a capacidade de incluir, embarcar e integrar outros aplicativos desenvolvidos nas mesmas plataformas ou em outras;
+            	\item Portabilidade: A plataforma deve permitir que as empresas movam o aplicativo de uma IaaS para outra.
+	\end{itemize}
+
+	\section{IaaS}
 		Infraestrutura como Serviço (\textit{Infrastructure as a Service} (IaaS)) é a camada do \textit{Cloud Computer} de mais baixo nível. Ela pode ser defida como sendo a 'capacidade compucional' da nuvem. Ela é responsável pela infraestrura, ou seja, é nesta camada que se define a quantidade de processamento, de armazenamento, de memória RAM, etc. Toda esta estrutura pode ser encontrada em nossas casas, mas em escala muito menor. O IaaS trabalha nesse nicho, mas em escala industrial.
 		
 		O IaaS não é constituído por PCs(\textit{Personal Computer}), mas por diversos servidores robustos, e os dados ficam em \textit{storages}, que são máquinas que possuem grande contingência, poder de armazenamento e velocidade.
@@ -81,8 +100,8 @@
 		
 		O IaaS fornece seus serviços as outras duas camadas superiores, o PaaS e o SaaS.
 		 
-	\section{Possibilidades -- Soluções disponíveis no mercado}
-		teste
-	\section{Conclusão}
+	\chapter{Possibilidades -- Soluções disponíveis no mercado}
+	  \section{Apple iCloud - SaaS}
+	\chapter{Conclusão}
 		teste
 \end{document}
