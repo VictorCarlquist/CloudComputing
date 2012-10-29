@@ -4,13 +4,14 @@
 
 %%%%% Dados para criação da capa e folha de rosto %%%%
 \autor{	Denis F. de Carvalho,
-	Guilherme A. de Macedo,
-	Matheus L. Domingues da Silva e 
-	Victor H. Carlquist da Silva
+		Guilherme A. de Macedo,
+		Matheus L. Domingues da Silva e 
+		Victor H. Carlquist da Silva
 }
 \titulo{Could Computing}
 \orientador{Avelino Natal Bazanella Junior}
-\comentario{Trabalho apresentado ao Prof. Avelino Bazanela Junior, na disciplina de Redes de Computadores presente no $2^{a}$ modulo do curso de Tecnologia em Análise e Desenvolvimento de Sistemas no IFSP-CJO.}
+\comentario{Trabalho apresentado ao Prof. Avelino Bazanela Junior, na disciplina de Redes de Computadores
+			presente no $2^{a}$ modulo do curso de Tecnologia em Análise e Desenvolvimento de Sistemas no IFSP-CJO.}
 \instituicao{Instituto Federal de Educação, Ciência e Tecnologia de São Paulo -- \textit{campus} Campos do Jordão}
 \local{Campos do Jordão}
 \data{\today}
@@ -26,12 +27,18 @@
 		Este trabalho tem por objetivo mostrar e explicar o funcionamento da tecnologia de computação em nuvem (cloud computing). 
 		A construção desse trabalho foi baseada em pesquisas em \textit{sites}, gráficos e tabelas, bem como a consulta de livros especializados.
 	\end{resumo}
+
+	\begin{abstract}
+		This work aims to show and explain the workings of the technology Cloud Computing. The construction of this work was based on research on sites, graphs and tables and consultation of specialized books.
+	\end{abstract}
 	
 	\sumario
 	
 	\listadetabelas
 	
 	\listadefiguras
+	
+	\newpage
 	
 	\chapter{Introdução}
 		teste
@@ -46,7 +53,7 @@
 	Entre os diversos recursos disponiveis com a utilização dessa tecnologia, 
 	destacam-se os metodos de SaaS, PaaS e IaaS.
 
-	\section{SaaS}
+	\chapter{SaaS}
 	
 	O Software como serviço (\textit{Software as a Service} (SaaS)) é uma forma 
 	de comercialização do software pela internet. Nesse modelo, o fornecedor 
@@ -65,32 +72,31 @@
 	Este modelo possibilita maior flexibilidade ao usuário, pois este não 
 	precisa se preocupar como é feita a configuração do sistema em uso. Cabe 
 	ao usuário apenas utilizar o serviço disponível.
-
+	
 	\section{PaaS}
 		A Plataforma como Serviço (\textit{Platform as a Service} (PaaS)) possibilita a escolha rápida de recursos para desenvolvimento de aplicações.
 		
 		Esta plataforma é considerada a mais confusa das camadas do \textit{cloud}, geralmente sendo confundida com o SaaS ou IaaS (\textit{Infrastructure as a Service}).
 		
 		Uma plataforma na computação, se referindo ao \textit{software}, pode ser definida como os Sistemas Operacionais, por exemplo, Windows\texttrademark , Linux e Mac OS, e pode ser definida como os \textit{frameworks} para os aplicativos. Os SGBDs (Sistema de Gerenciamento de Banco de Dados) também estãos nesta camada.
-
-	\begin{figure}[h]
-		\centering
-		\includegraphics[width=8cm, keepaspectratio]{img/figure1.jpg}
-		\label{fig_paas}
-		\caption{Estrutura do PaaS}
-	\end{figure}
-
-	O que um bom provedor PaaS precisa ter:
 	
-	\begin{itemize}
-		\item Estrutura de desenvolvimento de aplicativo: Uma estrutura de desenvolvimento de aplicativo robusta desenvolvida em tecnologia amplamente usada, por exemplo, o Java;
-            	\item Disponibilidade: A plataforma de opção deve estar acessível e disponível em qualquer lugar, a qualquer hora;
-            	\item Escalabilidade: A plataforma deve ser inteligente o suficiente para aproveitar a capacidade elástica de uma infraestrutura;
-            	\item Segurança: Deve possuir dispositivos contra ataques;
-            	\item Inclusão: A plataforma deve fornecer a capacidade de incluir, embarcar e integrar outros aplicativos desenvolvidos nas mesmas plataformas ou em outras;
-            	\item Portabilidade: A plataforma deve permitir que as empresas movam o aplicativo de uma IaaS para outra.
-	\end{itemize}
-
+		\begin{figure}[h]
+			\centering
+			\includegraphics[width=8cm, keepaspectratio]{img/figure1.jpg}
+			\label{fig_paas}
+			\caption{Estrutura do PaaS}
+		\end{figure}
+		
+		O que um bom provedor PaaS precisa ter:
+			\begin{itemize}
+		    \item Estrutura de desenvolvimento de aplicativo: Uma estrutura de desenvolvimento de aplicativo robusta desenvolvida em tecnologia amplamente usada, por exemplo, o Java;
+            \item Disponibilidade: A plataforma de opção deve estar acessível e disponível em qualquer lugar, a qualquer hora;
+            \item Escalabilidade: A plataforma deve ser inteligente o suficiente para aproveitar a capacidade elástica de uma infraestrutura;
+            \item Segurança: Deve possuir dispositivos contra ataques;
+            \item Inclusão: A plataforma deve fornecer a capacidade de incluir, embarcar e integrar outros aplicativos desenvolvidos nas mesmas plataformas ou em outras;
+            \item Portabilidade: A plataforma deve permitir que as empresas movam o aplicativo de uma IaaS para outra.
+		\end{itemize}
+		
 	\section{IaaS}
 		Infraestrutura como Serviço (\textit{Infrastructure as a Service} (IaaS)) é a camada do \textit{Cloud Computer} de mais baixo nível. Ela pode ser defida como sendo a 'capacidade compucional' da nuvem. Ela é responsável pela infraestrura, ou seja, é nesta camada que se define a quantidade de processamento, de armazenamento, de memória RAM, etc. Toda esta estrutura pode ser encontrada em nossas casas, mas em escala muito menor. O IaaS trabalha nesse nicho, mas em escala industrial.
 		
@@ -100,8 +106,19 @@
 		
 		O IaaS fornece seus serviços as outras duas camadas superiores, o PaaS e o SaaS.
 		 
-	\chapter{Possibilidades -- Soluções disponíveis no mercado}
-	  \section{Apple iCloud - SaaS}
+	\chapter{Possibilidades - Soluções disponíveis no mercado}
+		Soluções de PaaS:
+		\begin{itemize}
+			\item Heroku: A plataforma Heroku permite hospedar aplicações \textit{web} escritas em diversas linguagens, como o Ruby, PHP, Java e outros. O serviço básico de hospedagem é gratuíto, mas com o uso de serviços do heroku, por exemplo, banco de dados, é cobrado uma taxa mensal.
+			\item OpenShift - Red Hat: Esta plataforma permite hospedar aplicações em Java, PHP, Ruby e Python. Ela oferece dois tipos de serviços, um gratuíto e um pago. O serviço gratuíto é limitado, mas é possível hospedar diversos aplicativos, desde que não precise de banco de dados. Já o serviço pago possuí um poder de processamento melhor e suporte à banco de dados.
+		\end{itemize}
+		Soluções de IaaS:
+		\begin{itemize}
+			\item Amazon Web Service (AWS): A AWS permite criar servidores na nuvem de acordo com a necessidade da empresa. É possível escolher a plataforma e o poder de processamento do servidor. Com apenas alguns cliques é possível criar esses servidores. 
+			
+			O AWS usa um sistema de cobrança chamado \textit{pay-as-you-go} (pague pelo uso, em tradução livre), isso significa que você só paga quando o serviço está ativo.
+		\end{itemize}
+		
 	\chapter{Conclusão}
 		teste
 \end{document}
